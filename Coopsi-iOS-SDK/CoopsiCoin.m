@@ -7,12 +7,12 @@
 //
 
 #import "CoopsiCoin.h"
+#import "WalletViewController.h"
 
 @implementation CoopsiCoin
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     if (self = [super initWithCoder:aDecoder]) {
-        self.backgroundColor = [UIColor redColor];
         [self initFunction];
     }
     return self;
@@ -26,7 +26,6 @@
 }
 
 -(void)initFunction{
-    self.backgroundColor = [UIColor redColor];
     UIImage *image = [UIImage imageNamed:@"Coopsi.bundle/CoopsiCoin"];
  
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -34,7 +33,7 @@
                action:@selector(showWallet)
      forControlEvents:UIControlEventTouchUpInside];
     [button setImage:image forState:UIControlStateNormal];
-    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    button.frame = CGRectMake(0, 0, 160.0, 40.0);
     [self addSubview:button];
     
 //    UIImageView* imageView = [[UIImageView alloc]initWithImage:image];
@@ -42,7 +41,23 @@
 }
 
 -(void)showWallet{
-    
+    WalletViewController *viewController = [[WalletViewController alloc] init];
+    UIViewController* topMostVC = [self viewController];
+    [topMostVC presentViewController:viewController animated:YES completion:nil];
 }
 
+- (UIViewController*)viewController
+{
+    for (UIView* next = [self superview]; next; next = next.superview)
+    {
+        UIResponder* nextResponder = [next nextResponder];
+        
+        if ([nextResponder isKindOfClass:[UIViewController class]])
+        {
+            return (UIViewController*)nextResponder;
+        }
+    }
+    
+    return nil;
+}
 @end

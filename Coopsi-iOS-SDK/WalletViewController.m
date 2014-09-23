@@ -9,6 +9,8 @@
 #import "WalletViewController.h"
 
 @interface WalletViewController ()
+- (IBAction)dismissWallet:(id)sender;
+
 
 @end
 
@@ -34,4 +36,7 @@
 }
 */
 
+- (IBAction)dismissWallet:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
