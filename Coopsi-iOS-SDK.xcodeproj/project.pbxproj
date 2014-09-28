@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		195A35AC19D80AEA001E948D /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 195A35AF19D80AEA001E948D /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+			);
+			dependencies = (
+				19696A6219D80E2100954EC5 /* PBXTargetDependency */,
+				195A35B119D80B0B001E948D /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		19B22E4619D1AED200807F61 /* Coopsi_iOS_SDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; };
 		19B22E5E19D1AF0E00807F61 /* CoopsiCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */; };
@@ -13,6 +28,23 @@
 		19B22E6119D1AF2200807F61 /* Coopsi_iOS_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19B22E6219D1AF6300807F61 /* WalletViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B22E5B19D1AF0E00807F61 /* WalletViewController.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		195A35B019D80B0B001E948D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B22E3A19D1AED200807F61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B22E4119D1AED200807F61;
+			remoteInfo = "Coopsi-iOS-SDK";
+		};
+		19696A6119D80E2100954EC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B22E3A19D1AED200807F61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19696A5919D80DC300954EC5;
+			remoteInfo = CoopsiResources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		19B22E4019D1AED200807F61 /* CopyFiles */ = {
@@ -28,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19696A5A19D80DC300954EC5 /* CoopsiResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoopsiResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		19696A5D19D80DC300954EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCoopsi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coopsi_iOS_SDK.h; sourceTree = "<group>"; };
 		19B22E4D19D1AED200807F61 /* Coopsi-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coopsi-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		19696A5719D80DC300954EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19B22E3F19D1AED200807F61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +98,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19696A5B19D80DC300954EC5 /* CoopsiResources */ = {
+			isa = PBXGroup;
+			children = (
+				19696A5C19D80DC300954EC5 /* Supporting Files */,
+			);
+			path = CoopsiResources;
+			sourceTree = "<group>";
+		};
+		19696A5C19D80DC300954EC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19696A5D19D80DC300954EC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		19B22E3919D1AED200807F61 = {
 			isa = PBXGroup;
 			children = (
 				19B22E4419D1AED200807F61 /* Coopsi-iOS-SDK */,
 				19B22E4E19D1AED200807F61 /* Coopsi-iOS-SDKTests */,
+				19696A5B19D80DC300954EC5 /* CoopsiResources */,
 				19B22E4319D1AED200807F61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +129,7 @@
 			children = (
 				19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */,
 				19B22E4D19D1AED200807F61 /* Coopsi-iOS-SDKTests.xctest */,
+				19696A5A19D80DC300954EC5 /* CoopsiResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +178,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		19696A5919D80DC300954EC5 /* CoopsiResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19696A6019D80DC300954EC5 /* Build configuration list for PBXNativeTarget "CoopsiResources" */;
+			buildPhases = (
+				19696A5619D80DC300954EC5 /* Sources */,
+				19696A5719D80DC300954EC5 /* Frameworks */,
+				19696A5819D80DC300954EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoopsiResources;
+			productName = CoopsiResources;
+			productReference = 19696A5A19D80DC300954EC5 /* CoopsiResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		19B22E4119D1AED200807F61 /* Coopsi-iOS-SDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19B22E5319D1AED200807F61 /* Build configuration list for PBXNativeTarget "Coopsi-iOS-SDK" */;
@@ -163,6 +239,12 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Coopsi;
 				TargetAttributes = {
+					195A35AC19D80AEA001E948D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					19696A5919D80DC300954EC5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
 					19B22E4119D1AED200807F61 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -185,11 +267,20 @@
 			targets = (
 				19B22E4119D1AED200807F61 /* Coopsi-iOS-SDK */,
 				19B22E4C19D1AED200807F61 /* Coopsi-iOS-SDKTests */,
+				195A35AC19D80AEA001E948D /* Framework */,
+				19696A5919D80DC300954EC5 /* CoopsiResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		19696A5819D80DC300954EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19B22E4B19D1AED200807F61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +291,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		19696A5619D80DC300954EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19B22E3E19D1AED200807F61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,7 +316,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		195A35B119D80B0B001E948D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B22E4119D1AED200807F61 /* Coopsi-iOS-SDK */;
+			targetProxy = 195A35B019D80B0B001E948D /* PBXContainerItemProxy */;
+		};
+		19696A6219D80E2100954EC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19696A5919D80DC300954EC5 /* CoopsiResources */;
+			targetProxy = 19696A6119D80E2100954EC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		195A35AD19D80AEA001E948D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		195A35AE19D80AEA001E948D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19696A5E19D80DC300954EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoopsiResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		19696A5F19D80DC300954EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = CoopsiResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		19B22E5119D1AED200807F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -351,6 +507,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		195A35AF19D80AEA001E948D /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195A35AD19D80AEA001E948D /* Debug */,
+				195A35AE19D80AEA001E948D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19696A6019D80DC300954EC5 /* Build configuration list for PBXNativeTarget "CoopsiResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19696A5E19D80DC300954EC5 /* Debug */,
+				19696A5F19D80DC300954EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		19B22E3D19D1AED200807F61 /* Build configuration list for PBXProject "Coopsi-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -367,6 +540,7 @@
 				19B22E5519D1AED200807F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B22E5619D1AED200807F61 /* Build configuration list for PBXNativeTarget "Coopsi-iOS-SDKTests" */ = {
 			isa = XCConfigurationList;
@@ -375,6 +549,7 @@
 				19B22E5819D1AED200807F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

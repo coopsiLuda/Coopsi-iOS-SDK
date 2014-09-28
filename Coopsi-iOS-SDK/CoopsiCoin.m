@@ -9,7 +9,10 @@
 #import "CoopsiCoin.h"
 #import "WalletViewController.h"
 
+
 @implementation CoopsiCoin
+
+static NSBundle * _myBundle;
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     if (self = [super initWithCoder:aDecoder]) {
@@ -41,9 +44,25 @@
 }
 
 -(void)showWallet{
-    WalletViewController *viewController = [[WalletViewController alloc] init];
+    WalletViewController * viewController = [[WalletViewController alloc] initWithNibName:nil bundle:[self myBundle]];
+//    WalletViewController *viewController = [[WalletViewController alloc] init];
     UIViewController* topMostVC = [self viewController];
     [topMostVC presentViewController:viewController animated:YES completion:nil];
+}
+
+-(NSBundle *)myBundle{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        NSBundle * mainBundle = [NSBundle mainBundle];
+        NSString * pathToMyBundle = [mainBundle pathForResource:@"Coopsi" ofType:@"bundle"];
+        
+        NSAssert(pathToMyBundle, @"bundle not found", nil);
+        
+        _myBundle = [NSBundle bundleWithPath:pathToMyBundle];
+    });
+    
+    return _myBundle;
 }
 
 - (UIViewController*)viewController
