@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		19696A6319D8308B00954EC5 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B22E5D19D1AF0E00807F61 /* WalletViewController.xib */; };
 		19B22E4619D1AED200807F61 /* Coopsi_iOS_SDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; };
 		19B22E5E19D1AF0E00807F61 /* CoopsiCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */; };
 		19B22E5F19D1AF0E00807F61 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5C19D1AF0E00807F61 /* WalletViewController.m */; };
@@ -60,7 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		19696A5A19D80DC300954EC5 /* CoopsiResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoopsiResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		19696A5A19D80DC300954EC5 /* Coopsi.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coopsi.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		19696A5D19D80DC300954EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCoopsi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coopsi_iOS_SDK.h; sourceTree = "<group>"; };
@@ -129,7 +130,7 @@
 			children = (
 				19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */,
 				19B22E4D19D1AED200807F61 /* Coopsi-iOS-SDKTests.xctest */,
-				19696A5A19D80DC300954EC5 /* CoopsiResources.bundle */,
+				19696A5A19D80DC300954EC5 /* Coopsi.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,7 +193,7 @@
 			);
 			name = CoopsiResources;
 			productName = CoopsiResources;
-			productReference = 19696A5A19D80DC300954EC5 /* CoopsiResources.bundle */;
+			productReference = 19696A5A19D80DC300954EC5 /* Coopsi.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		19B22E4119D1AED200807F61 /* Coopsi-iOS-SDK */ = {
@@ -278,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19696A6319D8308B00954EC5 /* WalletViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +357,7 @@
 				INFOPLIST_FILE = CoopsiResources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Coopsi;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -369,7 +371,7 @@
 				INFOPLIST_FILE = CoopsiResources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Coopsi;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
