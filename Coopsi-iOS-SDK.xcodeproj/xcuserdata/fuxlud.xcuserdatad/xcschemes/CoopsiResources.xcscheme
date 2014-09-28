@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "19696A5919D80DC300954EC5"
-               BuildableName = "CoopsiResources.bundle"
+               BuildableName = "Coopsi.bundle"
                BlueprintName = "CoopsiResources"
                ReferencedContainer = "container:Coopsi-iOS-SDK.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19696A5919D80DC300954EC5"
-            BuildableName = "CoopsiResources.bundle"
+            BuildableName = "Coopsi.bundle"
             BlueprintName = "CoopsiResources"
             ReferencedContainer = "container:Coopsi-iOS-SDK.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19696A5919D80DC300954EC5"
-            BuildableName = "CoopsiResources.bundle"
+            BuildableName = "Coopsi.bundle"
             BlueprintName = "CoopsiResources"
             ReferencedContainer = "container:Coopsi-iOS-SDK.xcodeproj">
          </BuildableReference>

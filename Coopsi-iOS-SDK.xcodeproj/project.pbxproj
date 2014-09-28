@@ -22,7 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		19696A6319D8308B00954EC5 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B22E5D19D1AF0E00807F61 /* WalletViewController.xib */; };
+		19696A7119D84A0700954EC5 /* Main-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19696A6F19D8452800954EC5 /* Main-iPhone.storyboard */; };
 		19B22E4619D1AED200807F61 /* Coopsi_iOS_SDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; };
 		19B22E5E19D1AF0E00807F61 /* CoopsiCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */; };
 		19B22E5F19D1AF0E00807F61 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5C19D1AF0E00807F61 /* WalletViewController.m */; };
@@ -63,6 +63,7 @@
 /* Begin PBXFileReference section */
 		19696A5A19D80DC300954EC5 /* Coopsi.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coopsi.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		19696A5D19D80DC300954EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19696A6F19D8452800954EC5 /* Main-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPhone.storyboard"; sourceTree = "<group>"; };
 		19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCoopsi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coopsi_iOS_SDK.h; sourceTree = "<group>"; };
 		19B22E4D19D1AED200807F61 /* Coopsi-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coopsi-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +72,6 @@
 		19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoopsiCoin.m; sourceTree = "<group>"; };
 		19B22E5B19D1AF0E00807F61 /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		19B22E5C19D1AF0E00807F61 /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
-		19B22E5D19D1AF0E00807F61 /* WalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 				19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */,
 				19B22E5B19D1AF0E00807F61 /* WalletViewController.h */,
 				19B22E5C19D1AF0E00807F61 /* WalletViewController.m */,
-				19B22E5D19D1AF0E00807F61 /* WalletViewController.xib */,
+				19696A6F19D8452800954EC5 /* Main-iPhone.storyboard */,
 			);
 			path = "Coopsi-iOS-SDK";
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19696A6319D8308B00954EC5 /* WalletViewController.xib in Resources */,
+				19696A7119D84A0700954EC5 /* Main-iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +525,7 @@
 				19696A5F19D80DC300954EC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B22E3D19D1AED200807F61 /* Build configuration list for PBXProject "Coopsi-iOS-SDK" */ = {
 			isa = XCConfigurationList;

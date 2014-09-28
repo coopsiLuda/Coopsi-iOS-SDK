@@ -44,10 +44,16 @@ static NSBundle * _myBundle;
 }
 
 -(void)showWallet{
-    WalletViewController * viewController = [[WalletViewController alloc] initWithNibName:nil bundle:[self myBundle]];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main-iPhone"
+                                                             bundle:[self myBundle]];
+    
+    UINavigationController *navigationController = (UINavigationController*)[mainStoryboard
+                                                                          instantiateViewControllerWithIdentifier: @"WalletViewController"];
+    
+//    WalletViewController * viewController = [[WalletViewController alloc] initWithNibName:nil bundle:[self myBundle]];
 //    WalletViewController *viewController = [[WalletViewController alloc] init];
     UIViewController* topMostVC = [self viewController];
-    [topMostVC presentViewController:viewController animated:YES completion:nil];
+    [topMostVC presentViewController:navigationController animated:YES completion:nil];
 }
 
 -(NSBundle *)myBundle{
