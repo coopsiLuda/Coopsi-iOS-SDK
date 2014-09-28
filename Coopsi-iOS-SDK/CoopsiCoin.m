@@ -38,9 +38,6 @@ static NSBundle * _myBundle;
     [button setImage:image forState:UIControlStateNormal];
     button.frame = CGRectMake(0, 0, 160.0, 40.0);
     [self addSubview:button];
-    
-//    UIImageView* imageView = [[UIImageView alloc]initWithImage:image];
-//    [self addSubview:imageView];
 }
 
 -(void)showWallet{
@@ -50,8 +47,6 @@ static NSBundle * _myBundle;
     UINavigationController *navigationController = (UINavigationController*)[mainStoryboard
                                                                           instantiateViewControllerWithIdentifier: @"WalletViewController"];
     
-//    WalletViewController * viewController = [[WalletViewController alloc] initWithNibName:nil bundle:[self myBundle]];
-//    WalletViewController *viewController = [[WalletViewController alloc] init];
     UIViewController* topMostVC = [self viewController];
     [topMostVC presentViewController:navigationController animated:YES completion:nil];
 }
