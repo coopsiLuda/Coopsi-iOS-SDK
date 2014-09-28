@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		19696A7119D84A0700954EC5 /* Main-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19696A6F19D8452800954EC5 /* Main-iPhone.storyboard */; };
+		19696A7419D84C9600954EC5 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19696A7319D84C9600954EC5 /* Background.jpg */; };
 		19B22E4619D1AED200807F61 /* Coopsi_iOS_SDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; };
 		19B22E5E19D1AF0E00807F61 /* CoopsiCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */; };
 		19B22E5F19D1AF0E00807F61 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5C19D1AF0E00807F61 /* WalletViewController.m */; };
@@ -64,6 +65,7 @@
 		19696A5A19D80DC300954EC5 /* Coopsi.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coopsi.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		19696A5D19D80DC300954EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19696A6F19D8452800954EC5 /* Main-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPhone.storyboard"; sourceTree = "<group>"; };
+		19696A7319D84C9600954EC5 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCoopsi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coopsi_iOS_SDK.h; sourceTree = "<group>"; };
 		19B22E4D19D1AED200807F61 /* Coopsi-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coopsi-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 		19B22E4419D1AED200807F61 /* Coopsi-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				19696A7319D84C9600954EC5 /* Background.jpg */,
 				19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */,
 				19B22E5919D1AF0E00807F61 /* CoopsiCoin.h */,
 				19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19696A7119D84A0700954EC5 /* Main-iPhone.storyboard in Resources */,
+				19696A7419D84C9600954EC5 /* Background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
