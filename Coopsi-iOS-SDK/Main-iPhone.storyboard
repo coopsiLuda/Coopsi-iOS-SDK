@@ -43,9 +43,12 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa8-d4-ttU">
                                         <rect key="frame" x="0.0" y="18" width="55" height="48"/>
-                                        <state key="normal" image="Background.jpg">
+                                        <state key="normal" image="closeCoopsi">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dismissCoopsi:" destination="Jpp-fW-pRh" eventType="touchUpInside" id="kO1-Ca-Sfh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbU-ZY-Zvn">
                                         <rect key="frame" x="0.0" y="29" width="600" height="25"/>
@@ -65,61 +68,91 @@
                                     <constraint firstItem="VbU-ZY-Zvn" firstAttribute="top" secondItem="gWr-Ck-LXW" secondAttribute="top" constant="29" id="wjy-Mp-To9"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCe-rc-OwL" customClass="COWalletSummary">
-                                <rect key="frame" x="10" y="75" width="580" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCe-rc-OwL" customClass="COWalletSummary">
+                                <rect key="frame" x="10" y="75" width="580" height="49"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wik-ig-aZU">
-                                        <rect key="frame" x="10" y="7" width="79" height="13"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wik-ig-aZU">
+                                        <rect key="frame" x="10" y="7" width="66" height="13"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                         <color key="textColor" red="1" green="0.63529411759999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="548" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpj-NQ-DaX">
-                                        <rect key="frame" x="10" y="22" width="39" height="19"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="548" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpj-NQ-DaX">
+                                        <rect key="frame" x="10" y="18" width="39" height="28"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Avg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-MX-QNQ">
-                                        <rect key="frame" x="518" y="7" width="58" height="13"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Avg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-MX-QNQ">
+                                        <rect key="frame" x="524" y="7" width="46" height="13"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                         <color key="textColor" red="1" green="0.63529411759999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkN-Sy-oJm">
-                                        <rect key="frame" x="517" y="22" width="58" height="19"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkN-Sy-oJm">
+                                        <rect key="frame" x="534" y="18" width="26" height="28"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-DO-FRB" userLabel="vertical delimiter">
+                                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-DO-FRB" userLabel="vertical delimiter">
                                         <rect key="frame" x="515" y="12" width="1" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="5ZY-SW-btU"/>
+                                            <constraint firstAttribute="width" constant="1" id="6nQ-Ld-cYT"/>
+                                        </constraints>
                                     </view>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZq-PQ-Akn">
-                                        <rect key="frame" x="459" y="7" width="47" height="13"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZq-PQ-Akn">
+                                        <rect key="frame" x="476" y="7" width="30" height="13"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                         <color key="textColor" red="1" green="0.63529411759999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h3-Ut-hxU">
-                                        <rect key="frame" x="460" y="22" width="46" height="19"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h3-Ut-hxU">
+                                        <rect key="frame" x="478" y="18" width="26" height="28"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S56-HC-CA4">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coopsiWhite" translatesAutoresizingMaskIntoConstraints="NO" id="S56-HC-CA4">
                                         <rect key="frame" x="51" y="29" width="11" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="11" id="ABK-iv-ziJ"/>
+                                            <constraint firstAttribute="width" constant="11" id="mqO-5y-ujJ"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="0wA-LY-H7H"/>
+                                    <constraint firstItem="7h3-Ut-hxU" firstAttribute="centerX" secondItem="mZq-PQ-Akn" secondAttribute="centerX" id="5lM-6V-47Q"/>
+                                    <constraint firstItem="zKJ-MX-QNQ" firstAttribute="leading" secondItem="3bt-DO-FRB" secondAttribute="trailing" constant="8" id="9wK-aN-b80"/>
+                                    <constraint firstItem="Gpj-NQ-DaX" firstAttribute="leading" secondItem="kCe-rc-OwL" secondAttribute="leading" constant="10" id="Dxi-fw-JbT"/>
+                                    <constraint firstItem="zKJ-MX-QNQ" firstAttribute="top" secondItem="kCe-rc-OwL" secondAttribute="top" constant="7" id="EVy-Eb-2uR"/>
+                                    <constraint firstItem="wik-ig-aZU" firstAttribute="top" secondItem="kCe-rc-OwL" secondAttribute="top" constant="7" id="Kuu-Na-rym"/>
+                                    <constraint firstItem="3bt-DO-FRB" firstAttribute="leading" secondItem="mZq-PQ-Akn" secondAttribute="trailing" constant="9" id="Nyk-jd-2Cp"/>
+                                    <constraint firstItem="wik-ig-aZU" firstAttribute="leading" secondItem="kCe-rc-OwL" secondAttribute="leading" constant="10" id="Ra2-Xn-GHW"/>
+                                    <constraint firstItem="S56-HC-CA4" firstAttribute="leading" secondItem="Gpj-NQ-DaX" secondAttribute="trailing" constant="2" id="SyT-KL-eSK"/>
+                                    <constraint firstItem="jkN-Sy-oJm" firstAttribute="top" secondItem="zKJ-MX-QNQ" secondAttribute="bottom" constant="-2" id="dyN-Zp-dkQ"/>
+                                    <constraint firstItem="zKJ-MX-QNQ" firstAttribute="centerX" secondItem="jkN-Sy-oJm" secondAttribute="centerX" id="hiP-Oo-tsF"/>
+                                    <constraint firstItem="mZq-PQ-Akn" firstAttribute="top" secondItem="kCe-rc-OwL" secondAttribute="top" constant="7" id="jOa-ir-Lky"/>
+                                    <constraint firstAttribute="trailing" secondItem="zKJ-MX-QNQ" secondAttribute="trailing" constant="10" id="meC-Gb-7EI"/>
+                                    <constraint firstItem="3bt-DO-FRB" firstAttribute="top" secondItem="kCe-rc-OwL" secondAttribute="top" constant="12" id="sQl-EA-Mpa"/>
+                                    <constraint firstItem="Gpj-NQ-DaX" firstAttribute="top" secondItem="wik-ig-aZU" secondAttribute="bottom" constant="-2" id="tzK-Gq-tN4"/>
+                                    <constraint firstItem="S56-HC-CA4" firstAttribute="top" secondItem="wik-ig-aZU" secondAttribute="bottom" constant="9" id="y4O-kv-524"/>
+                                    <constraint firstItem="7h3-Ut-hxU" firstAttribute="top" secondItem="mZq-PQ-Akn" secondAttribute="bottom" constant="-2" id="zNS-nA-kyu"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kCe-rc-OwL" firstAttribute="top" secondItem="gWr-Ck-LXW" secondAttribute="bottom" constant="10" id="BCr-OY-5ZF"/>
                             <constraint firstItem="gWr-Ck-LXW" firstAttribute="leading" secondItem="Cpa-Qe-IBI" secondAttribute="leadingMargin" constant="-16" id="VCp-mK-RMB"/>
+                            <constraint firstItem="kCe-rc-OwL" firstAttribute="leading" secondItem="Cpa-Qe-IBI" secondAttribute="leadingMargin" constant="-6" id="VhR-27-hoR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gWr-Ck-LXW" secondAttribute="trailing" constant="-16" id="pPj-A8-LPT"/>
                             <constraint firstItem="gWr-Ck-LXW" firstAttribute="top" secondItem="Cpa-Qe-IBI" secondAttribute="topMargin" id="pSC-Zb-2jS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kCe-rc-OwL" secondAttribute="trailing" constant="-6" id="xSq-ky-NRG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oWS-ND-m6k"/>
@@ -132,7 +165,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background.jpg" width="640" height="1136"/>
         <image name="background" width="320" height="568"/>
+        <image name="closeCoopsi" width="24" height="23"/>
+        <image name="coopsiWhite" width="11" height="11"/>
     </resources>
 </document>

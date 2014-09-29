@@ -10,6 +10,7 @@
 
 @interface WalletViewController ()
 - (IBAction)dismissWallet:(id)sender;
+- (IBAction)dismissCoopsi:(id)sender;
 
 
 @end
@@ -37,6 +38,10 @@
 */
 
 - (IBAction)dismissWallet:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)dismissCoopsi:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
