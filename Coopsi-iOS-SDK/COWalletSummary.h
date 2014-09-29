@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COGraphContainer : UIView
+@interface COWalletSummary : UIView
 @property(weak, nonatomic)      IBOutlet UICollectionView *graphDates;
 @property(weak, nonatomic)      IBOutlet UIView *topDelimiter;
 @property(weak, nonatomic)      IBOutlet UIView *bottomDelimiter;

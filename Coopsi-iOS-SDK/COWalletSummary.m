@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Coopsi. All rights reserved.
 //
 
-#import "COGraphContainer.h"
+#import "COWalletSummary.h"
 
 
-@interface COGraphContainer()
+@interface COWalletSummary()
 
 @property (strong, nonatomic)   UIBezierPath *aPath;
 @property (strong, nonatomic)   CAShapeLayer *maskLayer;
@@ -19,7 +19,7 @@
 
 
 
-@implementation COGraphContainer
+@implementation COWalletSummary
 
 -(void)awakeFromNib{
     self.dilimitersAlpha = self.bottomDelimiter.alpha;
