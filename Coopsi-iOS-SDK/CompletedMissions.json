@@ -1,0 +1,65 @@
+[
+ {
+ "imageUrl": "http://pixxur.com/158523/114274-175x175.jpg&s1=&s2=&s3=",
+ "Conversion Point" : "Download and Install",
+ "Mission" : "The user must download the app from iTunes store, then install and open it on his iOS device. Converts after the application is opened",
+ "title" : "Candy Blast Mania ",
+ "amount" :9,
+ "Banner" :"http://www.gamezebo.com/wp-content/uploads/2013/10/a/games-medium-12496-1380829404.png",
+ "longDescription": "Match and collect candies in this amazingly delicious puzzle adventure guaranteed to satisfy your sweet tooth!",
+ "isNew" : 0
+ 
+ 
+ },
+    {
+      "imageUrl": "http://a2.mzstatic.com/us/r30/Purple4/v4/aa/7c/11/aa7c11a5-da6f-58c0-38bc-4d393256477a/mzl.sssnllib.175x175-75.jpg",
+      "Conversion Point" : "Download and Install",
+      "Mission" : "Download and Install",
+      "title" : "Big Fish Casino",
+      "amount" :9,
+      "Banner" :"http://pixxur.com/158523/114694-728x90.jpg&s1=&s2=&s3=",
+      "longDescription": "Download and play Big Fish Casino now!",
+      "isNew" : 0
+
+
+    },
+    
+ 
+    
+ 
+ {
+ "imageUrl": "http://www.tradedoubler.com/global/ukblog/hicon_glow_hotels_stacked-128-tm-r.png",
+ "Conversion Point" : "Download, install and open",
+ "Mission" : "Download, install and open",
+ "title" : "Hotels.com",
+ "amount" :5,
+ "Banner" :"http://pixxur.com/158523/77154-640x100.png&s1=&s2=&s3=",
+ "longDescription": "The Hotels.com app is the secure and easy way to find and book the perfect hotel for you. Pick from any of our 220,000 hotels. Need a room last minute? Discover the perfect hotel where ever you are with our exclusive deals on hotels nearby.",
+ "isNew" : 0
+ },
+
+    {
+      "imageUrl": "http://fc08.deviantart.net/fs47/i/2009/176/4/5/The_Sims_3_Icon_by_Sejuhasz.png",
+      "Conversion Point" : "Download and Install",
+      "Mission" : "IP Billing” 1- User goes to LP and clicks on “Continue” button 2- User chooses their Internet provider (Alice, Free, Orange) 3- Users must enter their provider’s ID and Password and click o",
+      "title" : "Sims 3",
+      "amount" :8,
+      "Banner" :"http://trkur.com/tk?o=15239&p=158523&s1=&s2=&s3='><img src='http://pixxur.com/158523/114320-500x500.jpg&s1=&s2=&s3=",
+      "longDescription": "IP Billing” 1- User goes to LP and clicks on “Continue” button 2- User chooses their Internet provider (Alice, Free, Orange) 3- Users must enter their provider’s ID and Password and click on “Valider”(validate) 4- Thank you page is displayed and pixel fires",
+      "isNew" : 0
+
+
+    },
+ {
+ "imageUrl": "http://androinica.com/wp-content/plugins/apps-android/icons/com.marvel.comics.png",
+ "Conversion Point" : "Download the latest version classic game!",
+ "Mission" : "Download the latest version of the classic game!",
+ "title" : "Marvel Heroes",
+ "amount" :10,
+ "Banner" :"http://pixxur.com/158523/91001-720x400.gif&s1=&s2=&s3=",
+ "longDescription": "Pin Submit - Double Opt-in. 1. Introduce your mobile number 2. Join the page on the code received by SMS 3. Confirm your subscription and download your product",
+ "isNew" : 0
+ 
+ 
+ }
+  ]

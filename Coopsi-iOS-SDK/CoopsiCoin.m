@@ -8,11 +8,10 @@
 
 #import "CoopsiCoin.h"
 #import "WalletViewController.h"
-
+#import "Shared.h"
 
 @implementation CoopsiCoin
 
-static NSBundle * _myBundle;
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     if (self = [super initWithCoder:aDecoder]) {
@@ -42,42 +41,14 @@ static NSBundle * _myBundle;
 
 -(void)showWallet{
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main-iPhone"
-                                                             bundle:[self myBundle]];
+                                                             bundle:[Shared myBundle]];
     
     UINavigationController *navigationController = (UINavigationController*)[mainStoryboard
                                                                           instantiateViewControllerWithIdentifier: @"WalletViewController"];
     
-    UIViewController* topMostVC = [self viewController];
+    UIViewController* topMostVC = [Shared viewControllerOf:self];
     [topMostVC presentViewController:navigationController animated:YES completion:nil];
 }
 
--(NSBundle *)myBundle{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        NSBundle * mainBundle = [NSBundle mainBundle];
-        NSString * pathToMyBundle = [mainBundle pathForResource:@"Coopsi" ofType:@"bundle"];
-        
-        NSAssert(pathToMyBundle, @"bundle not found", nil);
-        
-        _myBundle = [NSBundle bundleWithPath:pathToMyBundle];
-    });
-    
-    return _myBundle;
-}
 
-- (UIViewController*)viewController
-{
-    for (UIView* next = [self superview]; next; next = next.superview)
-    {
-        UIResponder* nextResponder = [next nextResponder];
-        
-        if ([nextResponder isKindOfClass:[UIViewController class]])
-        {
-            return (UIViewController*)nextResponder;
-        }
-    }
-    
-    return nil;
-}
 @end

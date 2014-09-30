@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "COTableViewController.h"
 
-@interface WalletViewController : UIViewController
+@interface WalletViewController : COTableViewController<UITableViewDataSource>
 
 @end

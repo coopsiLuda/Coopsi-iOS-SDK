@@ -26,11 +26,33 @@
 		1989C21C19D9336A00950541 /* COWalletSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = 1989C21A19D9336A00950541 /* COWalletSummary.h */; };
 		1989C21D19D9336A00950541 /* COWalletSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989C21B19D9336A00950541 /* COWalletSummary.m */; };
 		1989C21F19D937B700950541 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1989C21E19D937B700950541 /* Media.xcassets */; };
+		1989C22419D992DA00950541 /* COMissionsTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1989C22219D992DA00950541 /* COMissionsTableViewCell.h */; };
+		1989C22519D992DA00950541 /* COMissionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989C22319D992DA00950541 /* COMissionsTableViewCell.m */; };
+		1989C22819DA885900950541 /* COIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1989C22619DA885900950541 /* COIcon.h */; };
+		1989C22919DA885900950541 /* COIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989C22719DA885900950541 /* COIcon.m */; };
+		1989C22D19DA887400950541 /* COCoopsiAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 1989C22A19DA887400950541 /* COCoopsiAmount.h */; };
+		1989C22E19DA887400950541 /* COCoopsiAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989C22B19DA887400950541 /* COCoopsiAmount.m */; };
+		1989C22F19DA88DD00950541 /* COCoopsiAmount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1989C22C19DA887400950541 /* COCoopsiAmount.xib */; };
+		1989C23219DA894F00950541 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 1989C23019DA894F00950541 /* Shared.h */; };
+		1989C23319DA894F00950541 /* Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 1989C23119DA894F00950541 /* Shared.m */; };
 		19B22E4619D1AED200807F61 /* Coopsi_iOS_SDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; };
 		19B22E5E19D1AF0E00807F61 /* CoopsiCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */; };
 		19B22E5F19D1AF0E00807F61 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B22E5C19D1AF0E00807F61 /* WalletViewController.m */; };
 		19B22E6119D1AF2200807F61 /* Coopsi_iOS_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19B22E6219D1AF6300807F61 /* WalletViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B22E5B19D1AF0E00807F61 /* WalletViewController.h */; };
+		19E152FA19DA974000F847B7 /* COMissionsCompletedDS.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E152F819DA974000F847B7 /* COMissionsCompletedDS.h */; };
+		19E152FB19DA974000F847B7 /* COMissionsCompletedDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E152F919DA974000F847B7 /* COMissionsCompletedDS.m */; };
+		19E152FD19DA977700F847B7 /* CompletedMissions.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E152FC19DA977700F847B7 /* CompletedMissions.json */; };
+		19E1530019DA97E700F847B7 /* CODataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E152FE19DA97E700F847B7 /* CODataSource.h */; };
+		19E1530119DA97E700F847B7 /* CODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E152FF19DA97E700F847B7 /* CODataSource.m */; };
+		19E1530419DA9DCF00F847B7 /* COTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E1530219DA9DCF00F847B7 /* COTableViewCell.h */; };
+		19E1530519DA9DCF00F847B7 /* COTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1530319DA9DCF00F847B7 /* COTableViewCell.m */; };
+		19E1530819DAB57800F847B7 /* COTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E1530619DAB57800F847B7 /* COTableViewController.h */; };
+		19E1530919DAB57800F847B7 /* COTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1530719DAB57800F847B7 /* COTableViewController.m */; };
+		19E1530C19DAB58C00F847B7 /* CODataSourceRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E1530A19DAB58C00F847B7 /* CODataSourceRegistry.h */; };
+		19E1530D19DAB58C00F847B7 /* CODataSourceRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1530B19DAB58C00F847B7 /* CODataSourceRegistry.m */; };
+		19E1531019DAB8E700F847B7 /* COViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E1530E19DAB8E700F847B7 /* COViewController.h */; };
+		19E1531119DAB8E700F847B7 /* COViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E1530F19DAB8E700F847B7 /* COViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +92,15 @@
 		1989C21A19D9336A00950541 /* COWalletSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COWalletSummary.h; sourceTree = "<group>"; };
 		1989C21B19D9336A00950541 /* COWalletSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COWalletSummary.m; sourceTree = "<group>"; };
 		1989C21E19D937B700950541 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1989C22219D992DA00950541 /* COMissionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMissionsTableViewCell.h; sourceTree = "<group>"; };
+		1989C22319D992DA00950541 /* COMissionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMissionsTableViewCell.m; sourceTree = "<group>"; };
+		1989C22619DA885900950541 /* COIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COIcon.h; sourceTree = "<group>"; };
+		1989C22719DA885900950541 /* COIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COIcon.m; sourceTree = "<group>"; };
+		1989C22A19DA887400950541 /* COCoopsiAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COCoopsiAmount.h; sourceTree = "<group>"; };
+		1989C22B19DA887400950541 /* COCoopsiAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COCoopsiAmount.m; sourceTree = "<group>"; };
+		1989C22C19DA887400950541 /* COCoopsiAmount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COCoopsiAmount.xib; sourceTree = "<group>"; };
+		1989C23019DA894F00950541 /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
+		1989C23119DA894F00950541 /* Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shared.m; sourceTree = "<group>"; };
 		19B22E4219D1AED200807F61 /* libCoopsi-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCoopsi-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coopsi_iOS_SDK.h; sourceTree = "<group>"; };
 		19B22E4D19D1AED200807F61 /* Coopsi-iOS-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coopsi-iOS-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +109,19 @@
 		19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoopsiCoin.m; sourceTree = "<group>"; };
 		19B22E5B19D1AF0E00807F61 /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		19B22E5C19D1AF0E00807F61 /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		19E152F819DA974000F847B7 /* COMissionsCompletedDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMissionsCompletedDS.h; sourceTree = "<group>"; };
+		19E152F919DA974000F847B7 /* COMissionsCompletedDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMissionsCompletedDS.m; sourceTree = "<group>"; };
+		19E152FC19DA977700F847B7 /* CompletedMissions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CompletedMissions.json; sourceTree = "<group>"; };
+		19E152FE19DA97E700F847B7 /* CODataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CODataSource.h; sourceTree = "<group>"; };
+		19E152FF19DA97E700F847B7 /* CODataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CODataSource.m; sourceTree = "<group>"; };
+		19E1530219DA9DCF00F847B7 /* COTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTableViewCell.h; sourceTree = "<group>"; };
+		19E1530319DA9DCF00F847B7 /* COTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTableViewCell.m; sourceTree = "<group>"; };
+		19E1530619DAB57800F847B7 /* COTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTableViewController.h; sourceTree = "<group>"; };
+		19E1530719DAB57800F847B7 /* COTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTableViewController.m; sourceTree = "<group>"; };
+		19E1530A19DAB58C00F847B7 /* CODataSourceRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CODataSourceRegistry.h; sourceTree = "<group>"; };
+		19E1530B19DAB58C00F847B7 /* CODataSourceRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CODataSourceRegistry.m; sourceTree = "<group>"; };
+		19E1530E19DAB8E700F847B7 /* COViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COViewController.h; sourceTree = "<group>"; };
+		19E1530F19DAB8E700F847B7 /* COViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,14 +189,13 @@
 			isa = PBXGroup;
 			children = (
 				19B22E4519D1AED200807F61 /* Coopsi_iOS_SDK.h */,
-				19B22E5919D1AF0E00807F61 /* CoopsiCoin.h */,
-				19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */,
-				19B22E5B19D1AF0E00807F61 /* WalletViewController.h */,
-				19B22E5C19D1AF0E00807F61 /* WalletViewController.m */,
 				19696A6F19D8452800954EC5 /* Main-iPhone.storyboard */,
-				1989C21A19D9336A00950541 /* COWalletSummary.h */,
-				1989C21B19D9336A00950541 /* COWalletSummary.m */,
+				19E152F319DA950500F847B7 /* CoopsiCoin */,
+				19E152F219DA94F200F847B7 /* MissionsScreen */,
+				19E152F619DA957000F847B7 /* Views */,
 				1989C21E19D937B700950541 /* Media.xcassets */,
+				1989C23019DA894F00950541 /* Shared.h */,
+				1989C23119DA894F00950541 /* Shared.m */,
 			);
 			path = "Coopsi-iOS-SDK";
 			sourceTree = "<group>";
@@ -173,6 +216,77 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		19E152F219DA94F200F847B7 /* MissionsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				19E1530A19DAB58C00F847B7 /* CODataSourceRegistry.h */,
+				19E1530B19DAB58C00F847B7 /* CODataSourceRegistry.m */,
+				19B22E5B19D1AF0E00807F61 /* WalletViewController.h */,
+				19B22E5C19D1AF0E00807F61 /* WalletViewController.m */,
+				19E152F719DA973300F847B7 /* DataSource */,
+				19E152F519DA952C00F847B7 /* WalletSumery */,
+				19E152F419DA952100F847B7 /* Table */,
+			);
+			name = MissionsScreen;
+			sourceTree = "<group>";
+		};
+		19E152F319DA950500F847B7 /* CoopsiCoin */ = {
+			isa = PBXGroup;
+			children = (
+				19B22E5919D1AF0E00807F61 /* CoopsiCoin.h */,
+				19B22E5A19D1AF0E00807F61 /* CoopsiCoin.m */,
+			);
+			name = CoopsiCoin;
+			sourceTree = "<group>";
+		};
+		19E152F419DA952100F847B7 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				19E1530E19DAB8E700F847B7 /* COViewController.h */,
+				19E1530F19DAB8E700F847B7 /* COViewController.m */,
+				19E1530619DAB57800F847B7 /* COTableViewController.h */,
+				19E1530719DAB57800F847B7 /* COTableViewController.m */,
+				1989C22219D992DA00950541 /* COMissionsTableViewCell.h */,
+				1989C22319D992DA00950541 /* COMissionsTableViewCell.m */,
+				19E1530219DA9DCF00F847B7 /* COTableViewCell.h */,
+				19E1530319DA9DCF00F847B7 /* COTableViewCell.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		19E152F519DA952C00F847B7 /* WalletSumery */ = {
+			isa = PBXGroup;
+			children = (
+				1989C21A19D9336A00950541 /* COWalletSummary.h */,
+				1989C21B19D9336A00950541 /* COWalletSummary.m */,
+			);
+			name = WalletSumery;
+			sourceTree = "<group>";
+		};
+		19E152F619DA957000F847B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1989C22619DA885900950541 /* COIcon.h */,
+				1989C22719DA885900950541 /* COIcon.m */,
+				1989C22A19DA887400950541 /* COCoopsiAmount.h */,
+				1989C22B19DA887400950541 /* COCoopsiAmount.m */,
+				1989C22C19DA887400950541 /* COCoopsiAmount.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		19E152F719DA973300F847B7 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				19E152FE19DA97E700F847B7 /* CODataSource.h */,
+				19E152FF19DA97E700F847B7 /* CODataSource.m */,
+				19E152FC19DA977700F847B7 /* CompletedMissions.json */,
+				19E152F819DA974000F847B7 /* COMissionsCompletedDS.h */,
+				19E152F919DA974000F847B7 /* COMissionsCompletedDS.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -180,7 +294,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E152FA19DA974000F847B7 /* COMissionsCompletedDS.h in Headers */,
+				19E1530019DA97E700F847B7 /* CODataSource.h in Headers */,
+				19E1530419DA9DCF00F847B7 /* COTableViewCell.h in Headers */,
+				19E1530819DAB57800F847B7 /* COTableViewController.h in Headers */,
 				19B22E6119D1AF2200807F61 /* Coopsi_iOS_SDK.h in Headers */,
+				1989C22419D992DA00950541 /* COMissionsTableViewCell.h in Headers */,
+				19E1530C19DAB58C00F847B7 /* CODataSourceRegistry.h in Headers */,
+				1989C23219DA894F00950541 /* Shared.h in Headers */,
+				1989C22819DA885900950541 /* COIcon.h in Headers */,
+				1989C22D19DA887400950541 /* COCoopsiAmount.h in Headers */,
+				19E1531019DAB8E700F847B7 /* COViewController.h in Headers */,
 				19B22E6219D1AF6300807F61 /* WalletViewController.h in Headers */,
 				1989C21C19D9336A00950541 /* COWalletSummary.h in Headers */,
 			);
@@ -291,6 +415,7 @@
 			files = (
 				19696A7119D84A0700954EC5 /* Main-iPhone.storyboard in Resources */,
 				1989C21F19D937B700950541 /* Media.xcassets in Resources */,
+				1989C22F19DA88DD00950541 /* COCoopsiAmount.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E152FD19DA977700F847B7 /* CompletedMissions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +443,17 @@
 			files = (
 				1989C21D19D9336A00950541 /* COWalletSummary.m in Sources */,
 				19B22E5E19D1AF0E00807F61 /* CoopsiCoin.m in Sources */,
+				1989C22919DA885900950541 /* COIcon.m in Sources */,
+				1989C22519D992DA00950541 /* COMissionsTableViewCell.m in Sources */,
+				19E1530919DAB57800F847B7 /* COTableViewController.m in Sources */,
+				1989C22E19DA887400950541 /* COCoopsiAmount.m in Sources */,
+				19E152FB19DA974000F847B7 /* COMissionsCompletedDS.m in Sources */,
+				19E1530D19DAB58C00F847B7 /* CODataSourceRegistry.m in Sources */,
 				19B22E5F19D1AF0E00807F61 /* WalletViewController.m in Sources */,
+				19E1530519DA9DCF00F847B7 /* COTableViewCell.m in Sources */,
+				19E1531119DAB8E700F847B7 /* COViewController.m in Sources */,
+				1989C23319DA894F00950541 /* Shared.m in Sources */,
+				19E1530119DA97E700F847B7 /* CODataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
